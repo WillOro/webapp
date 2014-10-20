@@ -15,7 +15,9 @@
         </controllerFile>
         <controllerFile controllerName="Error"/>
       </controllersDirectory>
-      <formsDirectory enabled="false"/>
+      <formsDirectory>
+        <formFile formName="Newdeals"/>
+      </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
           <layoutScriptFile layoutName="layout"/>
@@ -25,6 +27,7 @@
         <dbTableDirectory>
           <dbTableFile dbTableName="Albums"/>
           <dbTableFile dbTableName="States"/>
+          <dbTableFile dbTableName="Newdeals"/>
         </dbTableDirectory>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
