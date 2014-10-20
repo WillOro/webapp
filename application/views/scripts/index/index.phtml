@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<title>Mutual of Omaha Life Insurance, Disability Insurance &amp; More</title>
+<meta name="description" content="Mutual of Omaha is a leading provider of life insurance, Medicare supplement insurance, disability insurance products and annuities. Visit today.">
+<meta name="keywords" content="life insurance, life insurance company">
+<script src="bootstrap3/js/bootstrap.js"></script>
+<script src="bootstrap3/js/bootstrap.min.js"></script>
+<script language="Javascript" src="js/jquery-2.1.1.js"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+<link rel="stylesheet" type="text/css" href="css/home.css"><!--[if lte IE 7]><link rel="stylesheet" href="http://www.mutualofomaha.com/css/ie.css" type="text/css" /><![endif]-->
+<style>
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  border-radius: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -2px 0px #ffffff, inset 0 1px 0 #ffffff;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 20px 25px 21px 25px;
+  font-size: 15px;
+  color: #ffffff;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+</style>
+
+<!--img src="http://localhost/webapp/images/MOOM_web.fw.png" style="width: 100%; height: 100%;" /-->
+
+<body id="homepage">
+
+
+<div id="wrapper">
+<div id="header" style="background-color:#ffffff;">
+	<div id="logo" class="" >
+		<span>Mutual of Omaha</span>
+		<img src="images/pixel.gif" alt="" title="Mutual of Omaha">
+	</div> 
+
+	<a href="#">
+	<div id="utilities">
+		<img src="images/call.png" alt="" title="Mutual of Omaha">
+	</div>
+	</a>
+</div> 
+
+<div id="content-wrapper">
+	<div id="nav-html" style="background-color:#093157;">
+	<ul class="nav nav-tabs">
+		<li><a href='#'>What is Medical Supplement Insurance</a></li>
+		<li><a href='#'>Medicare Supplement Plan Options</a></li>
+		<li><a href='#'>FAQs</a></li>
+		<li><a href='#'>Request a Free Quote Today!</a></li>
+	</ul>
+		<!--div id='cssmenu' style="background-color:#093157;">
+			<ul>
+			   <li><a href='#'>What is Medical Supplement Insurance</a></li>
+			   <li><a href='#'>Medicare Supplement Plan Options</a></li>
+			   <li><a href='#'>FAQs</a></li>
+			   <li><a href='#'>Request a Free Quote Today!</a></li>
+			</ul>
+		</div-->
+	<!--ul>
+		<li id="menu-button" ><a href="http://www.mutualofomaha.com/"><span></span></a></li>
+	</ul-->
+	</div>
+<div id="banner">
+	
+	<div id="login">
+		<div class="panel panel-warning">
+			<div class="panel-heading">
+				<h3 class="panel-title"><b>Get Started!</b></h3>
+				<p>Request your no-obligation quote today!</p>
+			</div>
+			<div class="panel-body">
+				<p align="center"><b>It's easy to get started. Simply answer a few questions and we'll provide you with a free, 
+				no obligation quote.</b></p>
+				<form role="form">
+				<p align="center">
+					<div class="selDiv"  align="center">
+					<select class="opts">
+					<?php foreach($this->states as $state) : ?>
+						<option><?php echo $this->escape($state->name);?></option>
+					<?php endforeach; ?>
+					</select>
+					</div>
+				</p>
+				<p align="center">
+					<button type="submit" class="btn btn-warning">Get Started ></button>
+				</p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="ad-carousel">
+		<!--div id="ad-carousel-tab-arrow" class="tab-1-arrow-position"></div-->
+	
+		<div id="ads">
+			<div class="ad">
+				<div class="ad-image">
+					<!--div class="panel panel-info col-md-12" style="height:85%; top:5px;"-->
+						<img src="images/carrousel.png" alt="" title="Mutual of Omaha" border="0" height="65%" width="100%" style="position: relative; top: 5px; left: 5px; right: 5px;">			
+						<div class="panel-footer" style="position: relative; bottom: 25px; left: 5px; right: 5px;">
+							<p align="left"><h4>Medical Supplement Insurance</h4></p>
+							<p>Complete coverage for individuals ages 65 and over from Mutual of Omaha. We help cover healthcare cost that traditional 
+							Medicare does not. Allow our licensed health insurance agents find the right Plan <a href="#">for you. Get your FREE qoute now!</a></p>
+						</div>
+					<!--/div-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+
+</div>	
+
+<div id="extras">
+	<div id="quick-links">
+		<h2>The Benefits of Owning a Medicare Supplement Insurance Policy</h2>
+        <p>With all the choices you have for your health care coverage, It's important to understand how each one works, its benefits and you share 
+		of the cost. Here's a brief look at how Medicare supplement insurance differs from other coverage , Including Medicare Advantage Plans.
+        </p>
+		<ul>
+			<li>Low Out-of-Pockets Cost</li>
+			<li>Keep Your Doctors and Hospitals who accept Medicare</li>
+			<li>Coverage is Guaranteed Renewable</li>
+		</ul>
+		<p>
+		<a>Learn More</a>
+		</p>
+	</div>
+	<div id="quick-links-right">
+		<h2>Medicare Supplement Insurance Basics</h2>
+        <p>Original Medicare covers many health care services and supplies, but there are many costs it doesn't cover. A medigap policy is health insurance
+		sold by private insurance companies to fill gaps in Original Medicare coverage.</p>
+		<p>
+		<a>> Learn More</a>
+		</p>
+	</div>
+</div>	
+
+</div>
+<ul class="sitemap_nav">
+	<li id="sitemap_about_nav"><a href="#sitemap" onclick="return false">About Us</a></li>
+	<li id="sitemap_pricing_options_nav"><a href="#sitemap" onclick="return false">Pricing Options</a></li>
+</ul>
+<div id="footer">
+	<ul class="links">
+		<li><a href="http://www.mutualofomaha.com/legal/privacy.php">Privacy Policy</a></li>
+		<li><a href="http://www.mutualofomaha.com/legal/terms.php">Terms of Use</a></li>
+		<li><a href="http://www.mutualofomaha.com/contact/?src=footer">Site Map</a></li>
+	</ul>
+   	<p class="copyright"><img src="images/secure-site.png" alt="" title="Mutual of Omaha" border="0"></p>
+    <div class="clear-both">
+	</div>
+    
+	<p>© 2013 Mutual of Omaha Insurance Company. All rights reserved.</p>
+	<p>Powered by TZ Insurance Solutions LLC.</p>
+	</br>
+	<p>this is a solicitation of insuranced and licensed agent may contact you by telephone to provide additional information. Not connected with endorsed by U.S. government or the Federal Medicare program.</p>
+	</br>
+	<p>AFN45725</p>
+
+</div>
+</div>
+
+
+
+</body>
