@@ -1,16 +1,22 @@
 #homepage { margin:1% 0; padding:0; background-color: #F2EDE6;}
 #wrapper { width:70%; margin:0 auto; overflow:hidden; border:0px dashed #333; }
-#header { background-color:#ffffff; width:100%; overflow:hidden; /*padding-top:1%;*/ border:0px dashed #333; }
-#logo { float:left; width:69%; height:auto; margin:0 0 0 1%; background: no-repeat scroll left top; box-sizing:border-box;}
-#utilities { float:left; width:30%; height:auto; padding:0 0 0 0; }
+#header { background-color:#ffffff; width:100%; overflow:hidden; }
+header { background-color:#ffffff; width:100%; overflow:hidden; background:#093157; }
+header nav { width:100%; margin:5px auto; overflow:hidden; }
+header nav ul { overflow:hidden; list-style:none; }
+header nav ul li { float:left; }
+header nav ul li a { color:#fff; padding:10px; text-decoration:none; display:block;}
+header nav ul li a:hover { background:#052137;}
+#logo { float:left; width:30%; height:auto; margin:0 0 0 1%; background: no-repeat scroll left top; box-sizing:border-box;}
+#utilities { float:right; width:25%; height:auto; padding:0 0 0 0; }
 #banner { width:100%; height:auto; overflow:hidden; background:#093157; margin:0 auto; float:left; box-sizing:border-box;}
 #ad-carousel { display:inline; position:relative; width:65%; height:auto; float:left; background:none; box-sizing:border-box;}
 #ad-carousel .ads { position:relative; border-radius:10px 10px 0px 0px ; padding:5px 0 0 5px; zoom:1; border:0px dashed #333;  box-sizing:border-box;}
 #ad-info { position:relative; border-radius: 0px 0px 10px 10px; padding:5px 5px 5px 20px; zoom:1; color:blue; background:#CEECF5; border:0px dashed #333;  box-sizing:border-box;}
-#orange
-{
-	background-color:#F3930E;
-}
+#orange { display:none; }
+#mform { display:none; }
+#mextras { display:none; }
+#mfooter { display:none; }
 
 #login-h
 {
@@ -99,10 +105,18 @@ form #submitbutton {
 	
 @media screen and (max-width:975px)
 {
+	header nav { width:80%; margin:0px; position:fixed; height:100%; background-color:#093157; clear:both; }
+	header nav ul li{ display:block; float:none; border-bottom:1px solid rgba(255,255,255 .3); }
+	
 	#homepage
 	{
 		background-color: #fff;
 		width:100%;
+	}
+	#logo
+	{
+		float:center;
+		position:relative;
 	}
 	#utilities
 	{
@@ -139,9 +153,41 @@ form #submitbutton {
 		background-color:#F3930E;
 		box-sizing:border-box;
 	}
-	#banner
+	#orange
 	{
 		background-color:#F3930E;
+		display:block;
+	}
+
+	#mform
+	{
+		display:block;
+	}
+	
+	#mextras
+	{
+		display:block;
+	}
+	#mfooter
+	{
+		display:block;
+	}
+	
+	#banner
+	{
+		display:none;
+	}
+	#extras
+	{
+		display:none;
+	}
+	#wfooter
+	{
+		display:none;
+	}
+	#wfooter2
+	{
+		display:none;
 	}
 	#homepage #extras #quick-links { float:left; width:100%; padding:15px 18px 4px 18px; }
 	#homepage #extras #quick-links-right  { float:left; width:100%;  padding:15px 18px 4px 18px; }
@@ -158,7 +204,7 @@ form #submitbutton {
 
 	
 }
-
+/*
 @media screen and (max-width:775px)
 {
 	#web
@@ -169,4 +215,4 @@ form #submitbutton {
 	{
 		display:block;
 	}	
-}
+}*/

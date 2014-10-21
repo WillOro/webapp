@@ -24,16 +24,25 @@
 <div id="wrapper">
 <div id="header">
 	<div id="logo">
-		<img src="images/pixel.gif" alt="" title="Mutual of Omaha">
+		<img src="images/pixel.gif" width="100%" height="auto" alt="" title="Mutual of Omaha">
 	</div> 
 
 	<a href="#">
 	<div id="utilities">
-		<img src="images/call.png" alt="" title="Mutual of Omaha">
+		<img src="images/call.png" width="100%" height="auto" alt="" title="Mutual of Omaha">
 	</div>
 	</a>
 </div> 
-		
+
+
+
+
+
+
+
+
+
+
 <div id="content-wrapper">
 	<div id="nav-html" style="color:#fff;background-color:#093157;">
 		<ul class="nav nav-tabs">
@@ -43,6 +52,13 @@
 			<li><a href='#'>Request a Free Quote Today!</a></li>
 		</ul>
 	</div>
+	<div id="orange">
+			<div width="100%">
+			<img src="images/m-ad.png" alt="" title="Mutual of Omaha" width="100%" style="position: relative; ">		
+			<h2 align="center" style="color:#FFFFFF;"><b>Get Started!</b></h2>
+			<h4 align="center" style="color:#FFFFFF;">Request your no-obligation quote today!</h4>
+			</div>
+		</div>
 <div id="banner">
 	
 	<div id="ad-carousel">
@@ -60,11 +76,6 @@
 		</div>
 	</div>
 	<div id="login">
-	<!--div id="login-h">
-		
-	</div>
-	<div id="login-f">
-	</div-->
 		<div class="panel panel-warning">
 			<div class="panel-heading">
 				<h3 class="panel-title"><b>Get Started!</b></h3>
@@ -74,7 +85,7 @@
 				<p align="center">It's easy to get started. Simply answer a few questions and we'll provide you with a free, 
 				no obligation quote.</p>
 				<form role="form" method="POST" action="getdata.php">
-				<p align="center">
+				<p align="center">	
 					<div class="selDiv"  align="center">
 					<select id="selected_state" class="opts">
 					<?php foreach($this->states as $state) : ?>
@@ -93,6 +104,25 @@
 
 	
 </div>
+
+			<div id="mform"class="panel-body" style="background-color:#FFFFFF;">
+				<p align="center">It's easy to get started. Simply answer a few questions and we'll provide you with a FREE, 
+				no obligation quote.</p>
+				<form role="form" method="POST" action="getdata.php">
+				<p align="center">
+					<div class="selDiv"  align="center">
+					<select id="selected_state" class="opts">
+					<?php foreach($this->states as $state) : ?>
+						<option value="<?php echo $this->escape($state->id);?>"><?php echo $this->escape($state->name);?></option>
+					<?php endforeach; ?>
+					</select>
+					</div>
+				</p>
+				<p align="center">
+					<button type="submit" class="btn btn-warning" style="color:#FFFFFF;">Get Started!    ></button>
+				</p>
+				</form>				
+			</div>
 
 <div id="extras">
 	<div id="quick-links">
@@ -114,75 +144,12 @@
         <p>Original Medicare covers many health care services and supplies, but there are many costs it doesn't cover. A medigap policy is health insurance
 		sold by private insurance companies to fill gaps in Original Medicare coverage.</p>
 		<p>
-		<a>> Learn More</a>
+		<a href="insurance.php">> Learn More</a>
 		</p>
 	</div>
 </div>	
 
-</div>
-<ul class="sitemap_nav">
-	<li id="sitemap_about_nav"><a href="#sitemap" onclick="return false">About Us</a></li>
-	<li id="sitemap_pricing_options_nav"><a href="#sitemap" onclick="return false">Pricing Options</a></li>
-</ul>
-<div id="footer">
-	<ul class="links">
-		<li><a href="http://www.mutualofomaha.com/legal/privacy.php">Privacy Policy</a></li>
-		<li><a href="http://www.mutualofomaha.com/legal/terms.php">Terms of Use</a></li>
-		<li><a href="http://www.mutualofomaha.com/contact/?src=footer">Site Map</a></li>
-	</ul>
-   	<p class="copyright"><img id="sec-image" src="images/secure-site.png" alt="" title="Mutual of Omaha" border="0"></p>
-    </br>
-    </br>
-    </br>
-	<p>© 2013 Mutual of Omaha Insurance Company. All rights reserved.</p>
-	<p>Powered by TZ Insurance Solutions LLC.</p>
-	</br>
-	<p>This is a solicitation of insuranced and licensed agent may contact you by telephone to provide additional information. Not connected with endorsed by U.S. government or the Federal Medicare program.</p>
-	</br>
-	<p>AFN45725</p>
-
-</div>
-</div>
-</div>
-<!-- mobile -->
-<div id="mobile">
-<div data-role="page" class="jqm-demos" data-quicklinks="true">
-	<div data-role="header" class="jqm-header">
-		<h2><a href="../" title="Mutual of Omaha"><img src="images/m-header.png" alt="Mutual of Omaha"></a></h2>
-		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-	</div>
-<div role="main" class="ui-content jqm-content">
-	
-<div class="ui-grid-a ui-responsive">
-<div class="ui-block-a">
-<div class="jqm-block-content">
-		<div id="orange">
-			<div class="panel-body">
-			<img src="images/m-ad.png" alt="" title="Mutual of Omaha" width="100%" style="position: relative; ">			
-			<h2 align="center" style="color:#FFFFFF;"><b>Get Started!</b></h2>
-			<h4 align="center" style="color:#FFFFFF;">Request your no-obligation quote today!</h4>
-			</div>
-		</div>
-		<div>
-			<div class="panel-body" style="background-color:#FFFFFF;">
-				<p align="center">It's easy to get started. Simply answer a few questions and we'll provide you with a FREE, 
-				no obligation quote.</p>
-				<form role="form" method="POST" action="getdata.php">
-				<p align="center">
-					<div class="selDiv"  align="center">
-					<select id="selected_state" class="opts">
-					<?php foreach($this->states as $state) : ?>
-						<option value="<?php echo $this->escape($state->id);?>"><?php echo $this->escape($state->name);?></option>
-					<?php endforeach; ?>
-					</select>
-					</div>
-				</p>
-				<p align="center">
-					<button type="submit" class="btn btn-warning" style="color:#FFFFFF;">Get Started!    ></button>
-				</p>
-				</form>				
-			</div>
-		</div>
+<div id="mextras">
 		<div>
 			<div class="panel-body" style="background-color:#093157;">
 				<p align="center" style="color:#FFFFFF"><b>Medical Supplement Insurance</b></p>
@@ -194,7 +161,7 @@
 			</div>
 		</div>
 		<div>
-			<div style="background-color:#FFFFFF;">
+			<div style="background-color:#FFFFFF; padding: 10px;">
 				<p><b>The Benefits of Owning a Medicare Supplement Insurance Policy</b></p>
 				<p>With all the choices you have for your health care coverage, It's important to understand how each one works, its benefits and you share 
 				of the cost. Here's a brief look at how Medicare supplement insurance differs from other coverage , Including Medicare Advantage Plans.
@@ -220,31 +187,48 @@
 				</p>
 			</div>
 		</div>
-		<div class="item">About Us</div>
-		<div class="item">Pricing Options</div>
-		<div class="item">Privacy Policy</div>
-		<div class="item">Terms of Use</div>
-		<div class="item">Site Map</div>
-		
-</div>
-</div>
-</div>
-
-</div>	
-
-<div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
-
-</div>
-
-	<div class="footer">
-		<p style="padding:10px 10px 10px 10px;">© 2013 Mutual of Omaha Insurance Company. All rights reserved.</p>
-		<p style="padding:10px 10px 10px 10px;">Powered by TZ Insurance Solutions LLC.
-		</br>This is a solicitation of insuranced and licensed agent may contact you by telephone to provide additional information. Not connected with endorsed by U.S. government or the Federal Medicare program.</p>
-		<p style="padding:10px 10px 10px 10px;">AFN45725</p>
-	</div>
-
 </div>
 
 
+</div>
 
+<div id="mfooter">
+	<div class="item">About Us</div>
+	<div class="item">Pricing Options</div>
+	<div class="item">Privacy Policy</div>
+	<div class="item">Terms of Use</div>
+	<div class="item">Site Map</div>
+</div>
+
+<div id="wfooter">
+<ul class="sitemap_nav">
+	<li id="sitemap_about_nav"><a href="contact/aboutus.php" onclick="return false">About Us</a></li>
+	<li id="sitemap_pricing_options_nav"><a href="contact/price.php" onclick="return false">Pricing Options</a></li>
+</ul>
+</div>
+<div id="footer">
+	<div id="wfooter2">
+	</br>
+	</br>
+	<ul class="links">
+		<li><a href="legal/privacy.php">Privacy Policy</a></li>
+		<li><a href="legal/terms.php">Terms of Use</a></li>
+		<li><a href="contact/sitemap.php">Site Map</a></li>
+	</ul>
+   	</div>
+	<p class="copyright"><img id="sec-image" src="images/secure-site.png" alt="" title="Mutual of Omaha" border="0"></p>
+    </br>
+    </br>
+    </br>
+	<p>© 2013 Mutual of Omaha Insurance Company. All rights reserved.</p>
+	<p>Powered by TZ Insurance Solutions LLC.</p>
+	</br>
+	<p>This is a solicitation of insuranced and licensed agent may contact you by telephone to provide additional information. Not connected with endorsed by U.S. government or the Federal Medicare program.</p>
+	</br>
+	<p>AFN45725</p>
+
+</div>
+</div>
+</div>
+<!-- mobile -->
 </body>
