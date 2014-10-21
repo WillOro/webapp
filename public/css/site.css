@@ -17,6 +17,7 @@ header nav ul li a:hover { background:#052137;}
 #mform { display:none; }
 #mextras { display:none; }
 #mfooter { display:none; }
+#mmenu{ display:none; }
 
 #login-h
 {
@@ -159,6 +160,11 @@ form #submitbutton {
 		display:block;
 	}
 
+	#mmenu
+	{
+		display:block;
+	}
+	
 	#mform
 	{
 		display:block;
@@ -174,6 +180,10 @@ form #submitbutton {
 	}
 	
 	#banner
+	{
+		display:none;
+	}
+	#header
 	{
 		display:none;
 	}
@@ -216,3 +226,6 @@ form #submitbutton {
 		display:block;
 	}	
 }*/
+
+
+

@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mutual of Omaha Mobile</title>
+	<title>Mutual of Omaha Plan Options</title>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="js/jqm/jquery.mobile-1.4.4.min.css">
 	<!--link rel="stylesheet" href="js/jqm/_assets/css/jqm-demos.css"-->
@@ -16,34 +16,23 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap-theme.min.css">
 	<script src="bootstrap3/js/bootstrap.js"></script>
 	<script src="bootstrap3/js/bootstrap.min.js"></script>
-<style>
-#orange
-{
-	background-color:#F3930E;
-}
-.item
-{
-	background-color:#848484;
-	color:#FFF;
-	text-align:center;
-	padding: 10px 0 10px 0;
-	border-color:#848484 #848484 #a4a4a4;
-	border-style: solid;
-}
-</style>
 </head>
-</body>
-<h2>The Benefits of Owning a Medicare Supplement Insurance Policy</h2>
-<p>With all the choices you have for your health care coverage, It's important to understand how each one works, its benefits and you share 
-of the cost. Here's a brief look at how Medicare supplement insurance differs from other coverage , Including Medicare Advantage Plans.
-</p>
+<body>
+<div class="panel panel-info col-md-5 col-md-offset-3">
+<div class="panel-heading"><b>Dependable and affordable dental plans and discount services</b></div>
+
+<p>Our dental plans and discount services are packed with value and extras. We have dental benefits and insurance plans that:</p>
+
 <ul>
-<li>Low Out-of-Pockets Cost</li>
-<li>Keep Your Doctors and Hospitals who accept Medicare</li>
-<li>Coverage is Guaranteed Renewable</li>
+<li>Help keep costs low</li>
+<li>Let members see any licensed dentist</li>
+<li>Include online tools to help people manage their benefits and learn about dental health</li>
+<li>And more... call now! <code>1-800-223-9185</code></li>
 </ul>
-<p>
-<a href="../public">back</a>
-</p>
+
+<div class="panel-footer">
+<a href="../public/">< back</a>
+</div>
+</div>
 </body>
 </html>
