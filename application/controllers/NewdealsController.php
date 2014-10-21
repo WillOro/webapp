@@ -20,9 +20,12 @@ class NewdealsController extends Zend_Controller_Action
         $this->view->title = 'Create User';
         if ($this->getRequest()->isPost()) {
             if ($form->isValid($this->getRequest()->getPost())) {
-                $post = new Application_Model_Newdeals($form->getValues());
-                print_r($post);exit;
-                $post->save();
+				// print_r($form->getValues());
+				// $post=new Application_Model_DbTable_Newdeals();
+				$post = new Application_Model_DbTable_Newdeals($form->getValues());
+                // print_r($post);
+				// exit;
+                $post->save($form->getValues());
                 $this->_helper->flashMessenger->addMessage('User saved.');
                 $this->view->messages = $this->_helper->flashMessenger->getMessages();
                 // reset the form
@@ -32,8 +35,15 @@ class NewdealsController extends Zend_Controller_Action
         $this->view->form = $form;
     }
 
+    public function saveAction()
+    {
+	
+	}
+
 
 }
+
+
 
 
 

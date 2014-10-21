@@ -22,7 +22,7 @@
 
 <body id="homepage" >
 <div id="mmenu" data-role="header" class="jqm-header">
-	<h2><a title="Mutual of Omaha"><img src="images/pixel-m.gif" width="100%" height="auto" alt="Mutual of Omaha"></a></h2>
+	<h2><a title="Mutual of Omaha"><img src="images/pixel-m.png" width="100%" height="auto" alt="Mutual of Omaha"></a></h2>
 	<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
 </div>
 
@@ -88,7 +88,7 @@
 					<select id="selected_state" class="opts">
 					<?php foreach($this->states as $state) : ?>
 						<option value="<?php echo $this->escape($state->id);?>"><?php echo $this->escape($state->name);?></option>
-					<?php endforeach; ?>
+					<?php $arr[$this->escape($state->id)]=$this->escape($state->name); endforeach; ?>
 					</select>
 					</div>
 				</p>
@@ -228,6 +228,4 @@
 </div>
 </div>
 
-<!--/div-->
-<!--/div-->
 </body>
